@@ -4,12 +4,14 @@ body {
     color: #cdcdcd;
     font-family: "Avenir Next", "Avenir", sans-serif;
     overflow-x: hidden;
+    
 }
 
 .video {
     position: fixed;
     z-index: -1;
     padding-bottom: 56.25%;
+    background-color:black;
 }
 
 .video__media {
@@ -157,7 +159,7 @@ a:hover li {
 #menu {
     position: absolute;
     width: 300px;
-    height: 700px;
+    height: 10000%;
     margin: -100px 0 0 0;
     padding: 50px;
     padding-top: 125px;
@@ -188,7 +190,7 @@ a:hover li {
 .films {
     position: relative;
     margin-top: 100px;
-    margin-left: 8%;
+    margin-left: 11%;
     margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -356,7 +358,17 @@ a:hover li {
     box-shadow: 0 0 10px rgb(0, 82, 233);
     transition: 0.3s;
 }
-
+@media(max-width: 360px) {
+    .video__media{
+        height: 2200px;
+    }
+}
+@media(max-width: 520px) {
+    .video__media{
+        height: 1000px;
+        background-color: black;
+    }
+}
 @media(max-width: 580px) {
     .films {
         justify-content: center;
@@ -364,19 +376,26 @@ a:hover li {
 }
 
 @media(max-width: 768px) {
+    
+    #menuToggle{
+        top: 40px;
+    }
+    #monroe{
+        margin: 20px;
+        width: 150px;
+        height: auto;
+    }
     #demo {
-        width: 103%;
+        width: 100%;
     }
-    .video__media {
-        width: 300%;
-    }
+    
     #menu {
         height: 100000%;
     }
-    #footer h5 {
-        font-size: 17px;
+    #texts h5 {
+        font-size: 10px;
     }
-    #footer h6 {
+    #texts h6 {
         font-size: 10px;
     }
 }

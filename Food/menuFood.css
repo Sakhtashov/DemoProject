@@ -147,7 +147,7 @@ a:hover li {
     font-family: sans-serif;
     position: absolute;
     width: 300px;
-    height: 700px;
+    height: 10000%;
     margin: -100px 0 0 0;
     padding: 50px;
     padding-top: 125px;
@@ -173,21 +173,23 @@ a:hover li {
 .bg-img {
     background-image: url("https://cdm.kz/img/desktop/bar/bar-back-main.jpg");
     background-attachment: fixed;
-    height: 100%;
+    height: 800px;
 }
 
 .food-icon {
     background-image: url("https://cdm.kz/img/desktop/bar/food.svg");
     background-repeat: no-repeat;
-    height: 400px;
-    width: 400px;
+    height: 250px;
+    width: 250px;
 }
 
 .drink-icon {
     background-image: url("https://cdm.kz/img/desktop/bar/drink.svg");
     background-repeat: no-repeat;
-    height: 400px;
-    width: 400px;
+    background-size: 250px 250px;
+    height: 250px;
+    width: 250px;
+    
 }
 
 #food-drink-links {
@@ -201,15 +203,16 @@ a:hover li {
     text-decoration: none;
     color: white;
     font-family: bold;
-    font-size: 2rem;
+    width: 250px;
+    height: 250px;
+}
+.food-link {
+    transform: translate(15%, 50%);
+    
 }
 
-.food-link .food-icon {
-    margin: 50% 0 15% 50%;
-}
-
-.drink-link .drink-icon {
-    margin-top: 55%;
+.drink-link {
+    transform: translate(0,60%);
 }
 
 .drink-link {
@@ -241,10 +244,10 @@ a:hover li {
 
 .close {
     position: absolute;
-    right: 120px;
-    top: 100px;
+    right: 127px;
+    top: 90px;
     color: rgb(255, 255, 255);
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
 }
 
@@ -369,7 +372,7 @@ a:hover li {
     bottom: 0;
     margin: 0;
     width: 100%;
-    height: 200px;
+    height: 250px;
 }
 
 .insta {
@@ -406,4 +409,19 @@ a:hover li {
 
 .gg:hover {
     color: rgb(165, 19, 19);
+}
+@media(max-width:500px) {
+    .food-link{
+        transform: translate(0, 50%);
+    }
+    .close{
+        right: 80px;
+
+    }
+}
+@media(max-width:768px){
+    .close{
+        right: 80px;
+        
+    }
 }
